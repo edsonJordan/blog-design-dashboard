@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+/* Desgin https://www.figma.com/community/file/991346867773569175 */
 /* font-family: 'Roboto', sans-serif; */
 :root{
     /* Colors */
@@ -96,7 +97,7 @@ h1,h2,h3,h4,p{
 .guide p{
     font-weight: 500;
 }
-.content-nav{
+.content_nav{
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
@@ -342,4 +343,169 @@ h1,h2,h3,h4,p{
 .list_lasts li p{
     font-weight: 400;
     color: var(--text-gray-light);
+}
+@media (min-width: 768px) { 
+    .container{
+       flex-direction: row;
+       column-gap: 2rem;
+    }
+    .navigation{
+        width: 25%;
+        padding: 1rem;
+        height: fit-content;
+    }
+    .content_nav{
+        padding: 1rem;
+    }
+    .text-logo{
+        font-size: larger;
+    }
+    .nav h2{
+        font-size: small;
+    }
+    .nav ul{
+        font-size: smaller;
+    }
+    .guide{
+        padding: 1.2rem 1rem;
+        column-gap: .2rem;
+        row-gap: .1rem;
+    }
+    .icon-guide{
+        font-size: xx-large;
+    }
+    .guide p{
+        font-size: smaller;
+    }
+    .guide span{
+        font-size: small;
+    }
+    .content{
+        width: 75%;
+        row-gap: 1rem;
+        height :fit-content;
+    }
+    .content_user{
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: .8rem;
+    }
+    .avatar{
+        width: 40px;
+        height: 40px;
+    }
+    .data_user p{
+        font-size: smaller;
+    }
+    .data_user span{
+        font-size: x-small;
+    }
+    .content_crumbs{
+        padding: 0;
+        text-align: left;
+    }
+    .content_crumbs h1{
+        font-size: large;
+    }
+    .content_crumbs span{
+        font-size: smaller;
+    }
+    .section_cards{
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows:none;
+        column-gap: 1rem;
+    }
+    .card{
+        padding: 1.3rem .8rem .8rem .8rem;
+        border-radius: 1rem;
+    }
+    .card__data{
+        row-gap: .5rem;
+    }
+    .card__data p{
+        font-size: small;
+    }
+    .card__data label{
+        font-size: x-large;
+    }
+    .icon-card{
+        font-size: xx-large;
+    }
+    .section_statics{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tittle_section{
+        align-items: left;
+        justify-content: start;
+        text-align: left;
+    }
+    .slideThree{
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .grapics_statics{
+        grid-column: span 2;
+    }
+    .tittle_section h2{
+        font-size: large;
+    }
+    .tittle_section span{
+        font-size: smaller;
+    }   
+    .slideThree:before{
+        font:13px/26px var(--font-roboto);
+    }
+    .slideThree:after{
+        font:13px/26px var(--font-roboto);
+    }
+    .slideThree label::after{
+        font:13px/26px var(--font-roboto);
+    }
+    .slideThree input[type=checkbox]:checked + label::after{
+        font:13px/26px var(--font-roboto);
+        margin-left: 1.2rem;
+    }
+    .slideThree label{
+        width: 80px;
+        margin-left: 1.1rem;
+        left: 0px;
+    }
+    .col_statics{
+        height: calc(calc(var(--module-size)*0.5) * var(--data-x));
+        width: 1rem;
+    }
+    .section_lasts{
+        column-gap: 1rem;
+        flex-direction: row;
+    }
+    .list_lasts{
+        flex-direction: row;
+    }
+    .section_lasts a{
+        height: min-content;
+        padding: initial;
+        margin: auto ;
+    }
+    .list_lasts{
+        margin: 0;
+        padding: initial;
+    }
+    .section_lasts a{
+        font-size: small;
+        width: 10rem;
+        padding: .5rem .8rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: pre;
+    }
+    .list_lasts{
+        font-size: smaller;
+        column-gap: .5rem;
+    }
+    .list_lasts li p{
+        font-size: small;
+       
+    }
+
 }
