@@ -208,6 +208,11 @@ h1,h2,h3,h4,p{
     flex-direction: column;
     text-align: center;
 }
+.section__content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
 .section_statics{
     display: grid;
     
@@ -382,7 +387,7 @@ h1,h2,h3,h4,p{
     }
     .content{
         width: 75%;
-        row-gap: 1rem;
+        row-gap: .8rem;
         height :fit-content;
     }
     .content_user{
@@ -507,5 +512,135 @@ h1,h2,h3,h4,p{
         font-size: small;
        
     }
-
 }
+@media (min-width: 1024px) {
+    .navigation{
+        padding: 2rem;
+    }
+    .text-logo{
+        font-size: x-large;
+    }
+    .content_nav{
+        padding: 4rem 2.5rem;
+    }
+    .nav h2{
+        font-size: medium;
+        padding-bottom: 3rem;
+    }
+    .nav ul li{
+        font-size: medium;      
+    }
+    .guide{
+        padding: 1.5rem 1.8rem;
+    }
+    .icon-guide{
+        font-size: xxx-large;
+    }
+    .content{
+        row-gap: 2.5rem;
+    }
+    .grapics_statics{
+        overflow: initial;
+    }
+    .col_statics{
+        height: calc(calc(var(--module-size)*0.8) * var(--data-x));
+    }
+    .section_lasts{
+        width: fit-content;
+    }
+    .list_lasts{
+        column-gap: 4rem;
+        
+    }
+    .section_lasts a{
+        font-size: medium;
+        margin-left: 0;
+        
+        font-weight: 700;
+    }
+    .list_lasts li label{
+        font-weight: 500;
+    }
+
+ }
+ @media (min-width: 1536px) { 
+    .container{
+        height:fit-content;
+     }
+    .navigation{
+        width: 18%;
+    }
+    .nav ul{
+        row-gap: 3.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .text-logo{
+        font-size: xx-large;
+        font-weight: 900;
+    }
+    .content_nav {
+        row-gap: 5.5rem;
+    }
+    .content_crumbs h1{
+        font-size: x-large;
+    }
+    .content{
+        row-gap: 3.5;
+    }
+    .data_user p{
+        font-size: medium;
+    }
+    .data_user span{
+        font-size: small;
+    }
+    .content_crumbs span{
+        font-size:medium;
+    }
+    .section_cards{
+        column-gap: 3.5rem;
+    }
+    .card{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4rem 3rem;
+    }
+    .card__data p{
+        font-size: large;
+    }
+    .icon-card{
+        font-size: xxx-large;
+    }
+    .section__content{
+    display: grid ;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3.5rem;
+    }
+    .section_statics{
+        grid-column: span 2;
+        width: 100%;
+    }
+    .section_lasts{
+        flex-direction: column;
+    }
+    .list_lasts{
+        flex-direction: column;
+    }
+    .section_lasts a{
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    .col_statics{
+        height: calc(calc(var(--module-size)*1.4) * var(--data-x));
+        width: 1.5rem;
+    }
+    .list_lasts li label{
+        font-size: medium;
+    }
+    .list_lasts li p{
+        font-size: small;
+    }
+
+  }
+
+
+
